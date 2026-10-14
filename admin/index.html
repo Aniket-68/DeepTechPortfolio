@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeepTech Admin</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+<link rel="stylesheet" href="admin.css"></head><body>
+<div id="login" class="center" hidden><form id="lf" class="panel narrow"><img src="/logo.svg" alt="" width="44" height="44"><h1>DeepTech Admin</h1><p class="mu">Sign in to manage projects and enquiries.</p>
+<label>Password<input id="pw" type="password" autocomplete="current-password" required autofocus></label><p class="err" id="lerr"></p><button class="btn" type="submit">Sign in</button></form></div>
+<div id="app" hidden>
+<header><div class="wrap bar"><a class="logo" href="/admin/"><img src="/logo.svg" alt="" width="32" height="32"><span>Deep<b>Tech</b> Admin</span></a>
+<nav id="tabs"><button data-t="dash" class="on">Dashboard</button><button data-t="proj">Projects</button><button data-t="enq">Enquiries <span id="nb" class="badge" hidden></span></button><button data-t="set">Settings</button></nav>
+<div class="right"><a href="/" target="_blank" class="lnk">View site</a><button class="btn o sm" id="lo">Sign out</button></div></div></header>
+<main class="wrap">
+<section id="t-dash"></section>
+<section id="t-proj" hidden><div class="head"><div><h2>Projects</h2><p class="mu">Shown on the website in this order.</p></div><button class="btn" id="addp">Add project</button></div><div id="plist" class="tablewrap"></div></section>
+<section id="t-enq" hidden><div class="head"><div><h2>Enquiries</h2><p class="mu">Messages and call requests from the website.</p></div><a class="btn o" href="/admin/api/enquiries.csv">Export CSV</a></div>
+<div class="chips" id="efilter"><button class="chip on" data-f="all">All</button><button class="chip" data-f="new">New</button><button class="chip" data-f="done">Done</button></div><div id="elist"></div></section>
+<section id="t-set" hidden><h2>Settings</h2><p class="mu">Contact details shown on the website.</p>
+<form id="sf" class="panel"><div class="r2"><label>Email<input name="email" type="email"></label><label>Phone (as shown)<input name="phone" placeholder="+91 81698 82434"></label></div>
+<div class="r2"><label>WhatsApp number (digits, with country code)<input name="wa" placeholder="918169882434"></label><label>Tagline<input name="tagline"></label></div>
+<div class="r2"><label>GitHub link<input name="github"></label><label>LinkedIn link<input name="linkedin"></label></div><p class="err" id="serr"></p><button class="btn" type="submit">Save settings</button></form>
+<h2 style="margin-top:36px">Password</h2><form id="pf" class="panel"><div class="r2"><label>Current password<input name="current" type="password" autocomplete="current-password"></label><label>New password (8+ characters)<input name="next" type="password" autocomplete="new-password"></label></div><p class="err" id="perr"></p><button class="btn" type="submit">Change password</button></form></section>
+</main></div>
+<div class="modal" id="pm" role="dialog" aria-modal="true"><form id="pe" class="panel box" novalidate><h2 id="pet">Add project</h2>
+<div class="r2"><label>Name *<input name="name" maxlength="80"></label><label>Category *<input name="cat" list="cats" maxlength="40"><datalist id="cats"></datalist></label></div>
+<label>Description<textarea name="desc" rows="3" maxlength="400"></textarea></label>
+<div class="r2"><label>Tags (comma separated)<input name="tags" placeholder="React, Node.js"></label><label>Year (optional)<input name="year" maxlength="10"></label></div>
+<label>Project link<input name="url" placeholder="https://"></label>
+<div class="shotrow"><div id="shot" class="shot">No screenshot</div><div><label class="file">Upload screenshot<input id="file" type="file" accept="image/jpeg,image/png,image/webp"></label><button type="button" class="lnk" id="rmshot">Remove screenshot</button><p class="mu sm">JPG, PNG or WebP, up to 5 MB.</p></div></div>
+<label class="chk"><input type="checkbox" name="sample"><span>Mark as sample (shows a "Sample" badge)</span></label>
+<label class="chk"><input type="checkbox" name="private"><span>Private B2B project (not publicly hosted; shows a "Private B2B" badge)</span></label>
+<p class="err" id="perr2"></p><div class="actions"><button type="button" class="btn o" id="pcancel">Cancel</button><button class="btn" type="submit">Save project</button></div></form></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="admin.js"></script></body></html>

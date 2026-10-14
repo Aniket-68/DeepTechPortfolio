@@ -1,0 +1,252 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeepTech Portfolio</title><meta name="description" content="DeepTech: IT software development and maintenance. AI applications, Android apps and web apps.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="i-ai" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="10" y="10" width="4" height="4"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
+<symbol id="i-an" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+<symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></symbol>
+<symbol id="i-mt" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+<symbol id="logo" viewBox="0 0 48 48"><path d="M24 3 42 13.5v21L24 45 6 34.5v-21z" fill="#fff" stroke="#1a73e8" stroke-width="3" stroke-linejoin="round"/><path d="M17 15h7a9 9 0 0 1 0 18h-7z" fill="none" stroke="#1a73e8" stroke-width="3.5" stroke-linejoin="round"/><circle cx="17" cy="15" r="3" fill="#ea4335"/><circle cx="17" cy="33" r="3" fill="#34a853"/><circle cx="33" cy="24" r="3" fill="#fbbc04"/></symbol>
+</defs></svg>
+<header><div class="wrap"><nav><a class="logo" href="#top" aria-label="DeepTech home"><svg><use href="#logo"/></svg><span>Deep<b>Tech</b></span></a>
+<ul><li><a href="#work">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#process">Process</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+<button class="btn" type="button" data-open="sched">Schedule a Call</button></nav></div></header>
+<main id="top">
+<div class="hero"><div class="wrap hgrid"><div>
+<span class="pill">IT software development &amp; maintenance</span>
+<h1>Software that helps your business <span>grow and scale.</span></h1>
+<p class="lead" id="tag"></p>
+<div class="row"><a class="btn" href="#work">View projects</a><button class="btn o" type="button" data-open="sched">Schedule a call</button></div>
+<div class="stats"><div><b id="n">20</b><span>Projects delivered</span></div><div><b>5+</b><span>Years building</span></div><div><b>4</b><span>Service lines</span></div></div></div>
+<div class="tiles">
+<div class="tile"><div class="ic c-ai"><svg><use href="#i-ai"/></svg></div><h3>AI Applications</h3><p>LLM, RAG, agents, vision</p></div>
+<div class="tile"><div class="ic c-an"><svg><use href="#i-an"/></svg></div><h3>Android Apps</h3><p>Built and published</p></div>
+<div class="tile"><div class="ic c-web"><svg><use href="#i-web"/></svg></div><h3>Web Apps</h3><p>Portals, SaaS, websites</p></div>
+<div class="tile"><div class="ic c-mt"><svg><use href="#i-mt"/></svg></div><h3>Maintenance</h3><p>Support and upgrades</p></div>
+</div></div></div>
+<div class="strip"><div class="wrap"><b>Built with</b><span>Python</span><span>Kotlin</span><span>React</span><span>Node.js</span><span>FastAPI</span><span>PostgreSQL</span><span>PyTorch</span><span>AWS</span></div></div>
+<section id="work"><div class="wrap"><h2>Our portfolio</h2><p class="sub">AI applications, Android apps, web apps and long-term maintenance.</p>
+<div class="bar"><div class="chips" id="chips"></div><label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search projects" aria-label="Search projects"></label></div>
+<p class="count" id="cnt"></p><div class="grid" id="grid"></div></div></section>
+<section id="services" class="alt"><div class="wrap"><h2>What we build</h2><p class="sub">We build and we maintain, from idea to production and beyond.</p>
+<div class="svc">
+<div><div class="ic c-ai"><svg><use href="#i-ai"/></svg></div><h3>AI Applications</h3><p>LLM and RAG apps, AI agents, voice automation and computer vision.</p></div>
+<div><div class="ic c-an"><svg><use href="#i-an"/></svg></div><h3>Android Apps</h3><p>Native and cross-platform mobile apps, built and published.</p></div>
+<div><div class="ic c-web"><svg><use href="#i-web"/></svg></div><h3>Web Apps</h3><p>Dashboards, portals, SaaS products and business websites.</p></div>
+<div><div class="ic c-mt"><svg><use href="#i-mt"/></svg></div><h3>Maintenance &amp; Support</h3><p>Bug fixes, upgrades, monitoring and ongoing improvements.</p></div></div></div></section>
+<section id="about"><div class="wrap"><div class="two"><div><span class="pill">About DeepTech</span><h2 style="margin-top:14px">A software team you can rely on, before and after launch</h2>
+<p class="para">DeepTech is an IT software development and maintenance company. We design, build and run AI applications, Android apps and web apps for businesses that want working software, not slide decks.</p>
+<p class="para">Most of our clients come to us with a rough idea and a deadline. We turn that into a clear plan, ship in small steps you can try every week, and stay on afterwards to fix, improve and scale what we built.</p>
+<p class="para">Our engineers have run production systems in healthcare, EV charging and agriculture, so we know what it takes to keep software reliable once real users depend on it.</p></div>
+<div class="why">
+<div><b>Client-oriented</b><span>You talk to the engineers building your product.</span></div>
+<div><b>Transparent</b><span>Fixed scope, clear pricing and weekly demos.</span></div>
+<div><b>Results-oriented</b><span>We measure success by what ships and works.</span></div>
+<div><b>Problem-solving</b><span>We say so early if there is a simpler way to get there.</span></div>
+<div><b>Built to last</b><span>Clean code, documentation and handover included.</span></div>
+<div><b>Long-term support</b><span>Maintenance plans so nothing breaks after launch.</span></div></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Industries we serve</h2><p class="sub">The same engineering discipline, applied to the problems of your sector.</p>
+<div class="inds"><span>Healthcare</span><span>EV &amp; energy</span><span>Agriculture</span><span>Finance &amp; lending</span><span>Real estate</span><span>Education</span><span>Retail &amp; e-commerce</span><span>Logistics</span><span>Startups &amp; SaaS</span></div></div></section>
+<section id="process"><div class="wrap"><h2>How it works</h2><p class="sub">Four steps from first call to launch.</p>
+<div class="steps">
+<div><b style="background:#1a73e8">1</b><h3>Schedule a call</h3><p>Tell us your goal and timeline. <a href="#contact" data-open="sched" style="color:var(--blue)">Book now</a></p></div>
+<div><b style="background:#d93025">2</b><h3>Deep dive</h3><p>We scope the problem, data and risks.</p></div>
+<div><b style="background:#f9ab00">3</b><h3>Proposal</h3><p>A clear plan with cost and milestones.</p></div>
+<div><b style="background:#188038">4</b><h3>Build and ship</h3><p>Weekly demos until launch, then support.</p></div></div></div></section>
+<section id="stack"><div class="wrap"><h2>Technology we use</h2><p class="sub">Proven tools, chosen to fit your product rather than our habits.</p>
+<div class="stack">
+<div><h3>AI &amp; data</h3><p>Python, PyTorch, LangChain, vector databases, OpenAI and open-source LLMs, speech and vision models</p></div>
+<div><h3>Mobile</h3><p>Kotlin, Jetpack Compose, Flutter, Firebase, Play Store publishing</p></div>
+<div><h3>Web</h3><p>React, Next.js, Node.js, FastAPI, REST and GraphQL APIs</p></div>
+<div><h3>Cloud &amp; data</h3><p>AWS, Docker, PostgreSQL, Redis, CI/CD, monitoring and alerting</p></div></div></div></section>
+<section id="faq" class="alt"><div class="wrap narrow"><h2>Frequently asked questions</h2><p class="sub">Short answers to what clients ask us first.</p>
+<details open><summary>What kind of projects do you take on?</summary><p>AI applications (chatbots, document search, voice agents, computer vision), Android apps, web apps and business websites, plus ongoing maintenance of existing software.</p></details>
+<details><summary>Can you maintain software someone else built?</summary><p>Yes. We review the code first, fix urgent issues, then agree a maintenance plan covering bug fixes, upgrades, security patches and monitoring.</p></details>
+<details><summary>How long does a project take?</summary><p>A focused web or mobile app usually takes 4 to 12 weeks. AI prototypes can be ready for testing in 2 to 3 weeks. You get an estimate in the proposal.</p></details>
+<details><summary>How is pricing decided?</summary><p>After a short discovery call we send a fixed-scope proposal with milestones. For long-running work we also offer monthly retainers.</p></details>
+<details><summary>Who owns the code?</summary><p>You do. Source code, designs and accounts are handed over to you at the end of the project.</p></details>
+<details><summary>Do you work with clients outside India?</summary><p>Yes. We work remotely with clients worldwide and use shared channels and weekly demos to keep everyone in step.</p></details></div></section>
+<section id="contact"><div class="wrap cgrid"><div><h2>Collaborate with us</h2><p class="sub">Tell us about your project. We reply within one business day with questions or a suggested next step.</p>
+<div class="list">
+<div><div class="ic c-ai"><svg><use href="#i-phone"/></svg></div><div><small>Call or WhatsApp</small><a id="ph" href="#"></a></div></div>
+<div><div class="ic c-web"><svg><use href="#i-mail"/></svg></div><div><small>Email</small><a id="em" href="#"></a></div></div>
+<div><div class="ic c-an"><svg><use href="#i-globe"/></svg></div><div><small>Location</small><span>India, serving clients worldwide</span></div></div>
+<div><div class="ic c-mt"><svg><use href="#i-clock"/></svg></div><div><small>Response time</small><span>Within one business day</span></div></div></div>
+<p class="note">Free 30-minute consultation call. No obligation.</p><p style="margin-top:12px"><button class="btn o" type="button" data-open="sched">Schedule a call</button></p></div>
+<div class="card2"><form id="f" novalidate><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="r2"><label for="n1">Full name *<input id="n1" name="n" autocomplete="name" placeholder="Your name"><span class="err" id="e-n"></span></label>
+<label for="c1">Company<input id="c1" name="c" autocomplete="organization" placeholder="Company name"></label></div>
+<div class="r2"><label for="e1">Email *<input id="e1" name="e" type="email" autocomplete="email" placeholder="you@company.com"><span class="err" id="e-e"></span></label>
+<label for="p1">Phone / WhatsApp<input id="p1" name="p" type="tel" autocomplete="tel" placeholder="+91 98765 43210"><span class="err" id="e-p"></span></label></div>
+<label for="s1">What do you need? *<select id="s1" name="s"><option value="">Select a service</option><option>AI Application</option><option>Android App</option><option>Web App</option><option>Maintenance &amp; Support</option><option>Not sure yet</option></select><span class="err" id="e-s"></span></label>
+<div class="r2"><label for="b1">Budget<select id="b1" name="b"><option>Not sure yet</option><option>Under ₹50,000</option><option>₹50,000 to ₹2,00,000</option><option>₹2,00,000 to ₹5,00,000</option><option>Above ₹5,00,000</option></select></label>
+<label for="t1">Timeline<select id="t1" name="t"><option>Just exploring</option><option>As soon as possible</option><option>1 to 3 months</option><option>3 to 6 months</option></select></label></div>
+<label for="m1">Project details *<textarea id="m1" name="m" rows="5" placeholder="What are you building, who is it for, and what should it do?"></textarea><span class="err" id="e-m"></span></label>
+<label class="chk" for="k1"><input id="k1" name="k" type="checkbox"><span>I agree to be contacted about my enquiry. *</span></label><span class="err" id="e-k"></span>
+<button class="btn" type="submit">Send message</button></form>
+<div id="done" hidden><div class="ok"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7 12.5 3.2 3.2L17 9"/></svg><div><h3>Thank you, we have your message</h3><p>We will reply to <b id="doneE"></b> within one business day.</p></div></div><div class="row"><a class="btn" id="waD" target="_blank" rel="noopener">Chat on WhatsApp</a><button class="btn o" id="again" type="button">Send another message</button></div></div>
+<div id="out" hidden><div class="ok"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7 12.5 3.2 3.2L17 9"/></svg><div><h3>Your message is ready</h3><p>Choose how to send it to DeepTech. Nothing is sent until you do.</p></div></div>
+<textarea id="msg" rows="8" readonly aria-label="Message preview"></textarea>
+<div class="row"><a class="btn" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn o" id="ml">Send by email</a><button class="btn o" id="cp" type="button">Copy message</button></div>
+<p class="note" style="margin-top:12px">If email does not open, copy the message and send it to <b id="em2"></b>.</p>
+<button class="lnk" id="bk" type="button">Edit my details</button></div></div></div></section>
+</main>
+<footer><div class="wrap fgrid"><div><a class="logo" href="#top"><svg><use href="#logo"/></svg><span>Deep<b>Tech</b></span></a><p style="margin-top:12px;max-width:300px">IT software development and maintenance. We build AI applications, Android apps and web apps.</p></div>
+<div><h4>Company</h4><a href="#about">About</a><a href="#work">Projects</a><a href="#process">Process</a><a href="#faq">FAQ</a></div>
+<div><h4>Contact</h4><a id="fph" href="#"></a><a id="fem" href="#"></a><a id="gh" href="#">GitHub</a><a id="li" href="#">LinkedIn</a></div></div>
+<div class="wrap fbot"><span>© 2026 DeepTech. All rights reserved.</span><span>Developed by <b>DeepTech</b></span></div></footer>
+<div class="modal" id="sm" role="dialog" aria-modal="true" aria-labelledby="smt"><div class="box sbox"><button class="x sx" id="sx" type="button" aria-label="Close">×</button><div class="sp">
+<h2 id="smt" style="font-size:26px">Schedule a free call</h2><p class="sub" style="margin-bottom:20px">30 minutes, no obligation. Pick a day and time and we will confirm.</p>
+<form id="f2" novalidate><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="r2"><label for="sn">Full name *<input id="sn" name="n" autocomplete="name" placeholder="Your name"><span class="err" id="s-n"></span></label>
+<label for="sp">Phone / WhatsApp *<input id="sp" name="p" type="tel" autocomplete="tel" placeholder="+91 98765 43210"><span class="err" id="s-p"></span></label></div>
+<div class="r2"><label for="se">Email<input id="se" name="e" type="email" autocomplete="email" placeholder="you@company.com"><span class="err" id="s-e"></span></label>
+<label for="ss">Topic<select id="ss" name="s"><option>AI Application</option><option>Android App</option><option>Web App</option><option>Maintenance &amp; Support</option><option>Not sure yet</option></select></label></div>
+<label for="sd">Preferred date *<input id="sd" name="d" type="date"><span class="err" id="s-d"></span></label>
+<div class="grp"><span class="gl">Preferred time (IST) *</span><div class="chips" id="slots"></div><span class="err" id="s-t"></span></div>
+<div class="grp"><span class="gl">How should we call?</span><div class="chips" id="modes"></div></div>
+<label for="sm2">Anything we should know?<textarea id="sm2" name="m" rows="3" placeholder="Optional: a line about your project"></textarea></label>
+<button class="btn" type="submit">Send request</button></form>
+<div id="done2" hidden><div class="ok"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7 12.5 3.2 3.2L17 9"/></svg><div><h3>Call request received</h3><p>You asked for <b id="doneD"></b>. We will confirm by phone or WhatsApp.</p></div></div><div class="row"><a class="btn" id="waD2" target="_blank" rel="noopener">Chat on WhatsApp</a><button class="btn o" id="again2" type="button">Request another time</button></div></div>
+<div id="out2" hidden><div class="ok"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7 12.5 3.2 3.2L17 9"/></svg><div><h3>Your call request is ready</h3><p>Choose how to send it. Nothing is sent until you do.</p></div></div>
+<textarea id="msg2" rows="8" readonly aria-label="Call request preview"></textarea>
+<div class="row"><a class="btn" id="wa2" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn o" id="ml2">Send by email</a><button class="btn o" id="cp2" type="button">Copy request</button></div>
+<button class="lnk" id="bk2" type="button">Edit my request</button></div>
+</div></div></div>
+<div class="modal" id="m"><div class="box" id="box"></div></div>
+<script src="projects.js"></script>
+<script>
+const P=[...(window.PROJECTS||[])],S=window.SITE,$=i=>document.getElementById(i);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const CC={"AI Applications":["c-ai","#1a73e8","ai"],"Android Apps":["c-an","#188038","an"],"Web Apps":["c-web","#d93025","web"],"Maintenance & Support":["c-mt","#b06000","mt"]};
+const cc=p=>CC[p.cat]||["c-ai","#1a73e8","ai"];
+const ico=p=>`<div class="ic ${cc(p)[0]}"><svg><use href="#i-${cc(p)[2]}"/></svg></div>`;
+function applySite(){$('tag').textContent=S.tagline;$('em').textContent=S.email;$('em').href='mailto:'+S.email;$('em2').textContent=S.email;$('fem').textContent=S.email;$('fem').href='mailto:'+S.email;
+$('ph').textContent=S.phone;$('ph').href='tel:+'+S.wa;$('fph').textContent=S.phone;$('fph').href='tel:+'+S.wa;
+$('gh').href=S.links.github||'#';$('li').href=S.links.linkedin||'#'}applySite();
+let cats=[],cur='All';
+const tags=p=>(p.tags||[]).map(t=>`<span>${esc(t)}</span>`).join('');
+const isIll=p=>/\.svg$|^data:image\/svg/.test(p.img||'');
+const shot=p=>p.img?`<img src="${esc(p.img)}" alt="${isIll(p)?'Illustration':'Screenshot'} of ${esc(p.name)}" loading="lazy">${isIll(p)?'<small class="illus">Illustration</small>':''}`:'';
+function card(p,i){const c=cc(p);return `<button class="card" data-i="${i}"><div class="thumb ${p.img?'shot':c[0]}">${p.img?shot(p):ico(p)}<i>${String(i+1).padStart(2,'0')}</i><em style="color:${c[1]}">${esc(p.cat)}</em></div><div class="body"><h3>${esc(p.name)}${p.sample?'<span class="sample">Sample</span>':''}${p.private?'<span class="sample priv">Private B2B</span>':''}</h3><p>${esc(p.desc)}</p><div class="tags">${tags(p)}</div></div></button>`}
+function render(){const q=$('q').value.trim().toLowerCase();
+const rows=P.map((p,i)=>[p,i]).filter(([p])=>(cur==='All'||p.cat===cur)&&(!q||(p.name+' '+p.desc+' '+p.tags.join(' ')).toLowerCase().includes(q)));
+$('grid').innerHTML=rows.length?rows.map(([p,i])=>card(p,i)).join(''):'<p class="empty">No projects match your search.</p>';
+$('cnt').textContent=`Showing ${rows.length} of ${P.length} projects`;
+document.querySelectorAll('#chips .chip').forEach(b=>b.classList.toggle('on',b.dataset.c===cur))}
+function buildChips(){cats=['All',...new Set(P.map(p=>p.cat))];if(!cats.includes(cur))cur='All';$('chips').innerHTML=cats.map(c=>`<button class="chip" data-c="${esc(c)}">${esc(c)}</button>`).join('')}
+$('chips').onclick=e=>{if(e.target.dataset.c){cur=e.target.dataset.c;render()}};
+$('q').oninput=render;
+$('grid').onclick=e=>{const c=e.target.closest('.card');if(!c)return;const p=P[c.dataset.i],k=cc(p);
+$('box').innerHTML=`<div class="thumb ${p.img?'shot':k[0]}">${p.img?shot(p):ico(p)}<em style="color:${k[1]}">${esc(p.cat)}${p.year?' · '+esc(p.year):''}</em></div><div class="body"><button class="x" aria-label="Close" onclick="m.classList.remove('on')">×</button><h2 style="font-size:24px;margin:0">${esc(p.name)}${p.sample?' <span class="sample">Sample</span>':''}${p.private?' <span class="sample priv">Private B2B</span>':''}</h2><p style="color:var(--mu);margin-top:8px">${esc(p.desc)}</p>${p.private?'<p class="privnote">Delivered privately to the client. Not publicly hosted.</p>':''}<div class="tags">${tags(p)}</div>${p.url?`<p style="margin-top:20px"><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener">Visit project</a></p>`:''}</div>`;$('m').classList.add('on')};
+$('m').onclick=e=>{if(e.target.id==='m')$('m').classList.remove('on')};
+document.onkeydown=e=>{if(e.key==='Escape')$('m').classList.remove('on')};
+async function send(url,body){try{const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+if(r.ok)return{ok:true};if(r.status===400||r.status===429){const j=await r.json().catch(()=>({}));return{error:j.error||'Please check your details.'}}return{fail:true}}catch(e){return{fail:true}}}
+const F=$('f'),val=n=>F.elements[n].value.trim();
+const setErr=(k,t)=>{$('e-'+k).textContent=t;return !t};
+let msgText='';
+function check(){let ok=true;
+ok=setErr('n',val('n').length<2?'Enter your name.':'')&&ok;
+ok=setErr('e',/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('e'))?'':'Enter a valid email address.')&&ok;
+ok=setErr('p',!val('p')||/^\+?[\d\s-]{10,15}$/.test(val('p'))?'':'Enter a valid phone number, for example +91 98765 43210.')&&ok;
+ok=setErr('s',val('s')?'':'Select a service.')&&ok;
+ok=setErr('m',val('m').length<15?'Describe your project in at least a sentence.':'')&&ok;
+ok=setErr('k',F.elements.k.checked?'':'Please tick the box so we can contact you.')&&ok;return ok}
+F.oninput=F.onchange=()=>{if(F.dataset.tried)check()};
+F.onsubmit=async e=>{e.preventDefault();F.dataset.tried=1;if(!check()){const b=F.querySelector('.err:not(:empty)');b&&b.scrollIntoView({block:'center',behavior:'smooth'});return}
+msgText=['New enquiry for DeepTech','','Name: '+val('n'),'Company: '+(val('c')||'-'),'Email: '+val('e'),'Phone: '+(val('p')||'-'),'Service: '+val('s'),'Budget: '+val('b'),'Timeline: '+val('t'),'','Project details:',val('m')].join('\n');
+const btn=F.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending...';
+const r=await send('/api/contact',{name:val('n'),company:val('c'),email:val('e'),phone:val('p'),service:val('s'),budget:val('b'),timeline:val('t'),message:val('m'),website:val('website')});
+btn.disabled=false;btn.textContent='Send message';
+if(r.error){$('e-m').textContent=r.error;return}
+if(r.ok){F.hidden=true;$('doneE').textContent=val('e');$('waD').href='https://wa.me/'+S.wa;$('done').hidden=false;$('done').scrollIntoView({block:'center',behavior:'smooth'});return}
+$('msg').value=msgText;
+$('wa').href='https://wa.me/'+S.wa+'?text='+encodeURIComponent(msgText);
+$('ml').href='mailto:'+S.email+'?subject='+encodeURIComponent('Project enquiry: '+val('s'))+'&body='+encodeURIComponent(msgText);
+F.hidden=true;$('out').hidden=false;$('out').scrollIntoView({block:'center',behavior:'smooth'})};
+$('again').onclick=()=>{F.reset();F.dataset.tried='';F.querySelectorAll('select').forEach(s=>s.dispatchEvent(new Event('change')));document.querySelectorAll('#f .err').forEach(x=>x.textContent='');$('done').hidden=true;F.hidden=false};
+$('bk').onclick=()=>{$('out').hidden=true;F.hidden=false};
+$('cp').onclick=()=>{(navigator.clipboard?navigator.clipboard.writeText(msgText):Promise.reject()).then(()=>$('cp').textContent='Copied').catch(()=>{$('msg').select();$('cp').textContent='Select and copy'})};
+
+/*DD*/
+(function(){const CHK='<svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg>',ARR='<svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>';
+document.querySelectorAll('#f select,#f2 select').forEach(sel=>{
+const w=document.createElement('div');w.className='dd';sel.parentNode.insertBefore(w,sel);w.appendChild(sel);
+sel.tabIndex=-1;sel.setAttribute('aria-hidden','true');
+const b=document.createElement('button');b.type='button';b.className='dd-btn';b.setAttribute('aria-haspopup','listbox');b.setAttribute('aria-expanded','false');
+b.innerHTML='<span class="dd-v"></span>'+ARR;
+const ul=document.createElement('ul');ul.className='dd-list';ul.setAttribute('role','listbox');
+ul.innerHTML=[...sel.options].filter((o,i)=>!(i===0&&o.value==='')).map(o=>`<li role="option" data-v="${esc(o.value||o.text)}">${esc(o.text)}${CHK}</li>`).join('');
+w.append(b,ul);
+const items=()=>[...ul.children];let act=-1;
+function sync(){const o=sel.options[sel.selectedIndex];const ph=sel.value==='';b.classList.toggle('ph',ph);b.querySelector('.dd-v').textContent=o?o.text:'';
+items().forEach(li=>li.setAttribute('aria-selected',String(!ph&&li.dataset.v===sel.value)))}
+function setAct(i){const it=items();if(!it.length)return;act=(i+it.length)%it.length;it.forEach((li,k)=>li.classList.toggle('act',k===act));it[act].scrollIntoView({block:'nearest'})}
+function open(){document.querySelectorAll('.dd.open').forEach(d=>d!==w&&d.classList.remove('open'));
+const r=b.getBoundingClientRect();w.classList.toggle('up',window.innerHeight-r.bottom<300&&r.top>300);
+w.classList.add('open');b.setAttribute('aria-expanded','true');setAct(Math.max(0,items().findIndex(li=>li.getAttribute('aria-selected')==='true')))}
+function close(){w.classList.remove('open');b.setAttribute('aria-expanded','false')}
+function pick(li){sel.value=li.dataset.v;sel.dispatchEvent(new Event('change',{bubbles:true}));sync();close();b.focus()}
+b.onclick=()=>w.classList.contains('open')?close():open();
+ul.onclick=e=>{const li=e.target.closest('li');li&&pick(li)};
+ul.onmousemove=e=>{const li=e.target.closest('li');li&&setAct(items().indexOf(li))};
+b.onkeydown=e=>{const o=w.classList.contains('open');
+if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();o?setAct(act+(e.key==='ArrowDown'?1:-1)):open()}
+else if(e.key==='Enter'||e.key===' '){e.preventDefault();o?pick(items()[act]):open()}
+else if(e.key==='Escape'&&o){e.preventDefault();e.stopPropagation();close()}
+else if(e.key==='Home'&&o){e.preventDefault();setAct(0)}else if(e.key==='End'&&o){e.preventDefault();setAct(items().length-1)}
+else if(e.key==='Tab')close();
+else if(e.key.length===1){const k=e.key.toLowerCase(),it=items(),s=it.findIndex((li,i)=>i>act&&li.textContent.toLowerCase().startsWith(k));const j=s>-1?s:it.findIndex(li=>li.textContent.toLowerCase().startsWith(k));if(j>-1){o||open();setAct(j)}}};
+document.addEventListener('click',e=>{if(!w.contains(e.target))close()});
+sel.addEventListener('focus',()=>b.focus());sel.addEventListener('change',sync);
+sel.closest('label').addEventListener('click',e=>{if(!w.contains(e.target)){e.preventDefault();b.focus()}});
+sync()})})();
+/*DDEND*/
+/*SCHED*/
+(function(){const sm=$('sm'),F2=$('f2');let slot='',mode='Phone call';
+const SL=['10:00 AM','11:30 AM','1:00 PM','3:00 PM','4:30 PM','6:00 PM'],MD=['Phone call','WhatsApp call','Google Meet'];
+const chips=(id,arr,get,set)=>{const el=$(id);el.innerHTML=arr.map(a=>`<button type="button" class="chip${get()===a?' on':''}" data-v="${a}">${a}</button>`).join('');
+el.onclick=e=>{const v=e.target.dataset.v;if(!v)return;set(v);[...el.children].forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(F2.dataset.tried)chk()}};
+chips('slots',SL,()=>slot,v=>slot=v);chips('modes',MD,()=>mode,v=>mode=v);
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const td=new Date(),mx=new Date(Date.now()+60*864e5);$('sd').min=iso(td);$('sd').max=iso(mx);
+const v=n=>F2.elements[n].value.trim(),er=(k,t)=>{$('s-'+k).textContent=t;return !t};
+function chk(){let ok=true;
+ok=er('n',v('n').length<2?'Enter your name.':'')&&ok;
+ok=er('p',/^\+?[\d\s-]{10,15}$/.test(v('p'))?'':'Enter a valid phone number, for example +91 98765 43210.')&&ok;
+ok=er('e',!v('e')||/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v('e'))?'':'Enter a valid email address.')&&ok;
+ok=er('d',!v('d')?'Pick a date.':(v('d')<iso(td)?'Pick today or a later date.':(v('d')>iso(mx)?'Pick a date within the next 60 days.':'')))&&ok;
+ok=er('t',slot?'':'Pick a time slot.')&&ok;return ok}
+F2.oninput=F2.onchange=()=>{if(F2.dataset.tried)chk()};
+function openS(){sm.classList.add('on');$('out2').hidden=true;F2.hidden=false;setTimeout(()=>$('sn').focus(),50)}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-open="sched"]');if(t){e.preventDefault();openS()}});
+$('sx').onclick=()=>sm.classList.remove('on');sm.onclick=e=>{if(e.target===sm)sm.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.querySelector('.dd.open'))sm.classList.remove('on')});
+let txt='';
+F2.onsubmit=async e=>{e.preventDefault();F2.dataset.tried=1;if(!chk()){const b=F2.querySelector('.err:not(:empty)');b&&b.scrollIntoView({block:'center',behavior:'smooth'});return}
+const dt=new Date(v('d')+'T00:00:00').toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+txt=['Call request for DeepTech','','Name: '+v('n'),'Phone: '+v('p'),'Email: '+(v('e')||'-'),'Topic: '+v('s'),'Preferred date: '+dt,'Preferred time: '+slot+' IST','Call by: '+mode,'','Notes: '+(v('m')||'-')].join('\n');
+const btn=F2.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending...';
+const r=await send('/api/schedule',{name:v('n'),phone:v('p'),email:v('e'),topic:v('s'),date:v('d'),time:slot,mode:mode,notes:v('m'),website:v('website')});
+btn.disabled=false;btn.textContent='Send request';
+if(r.error){$('s-t').textContent=r.error;return}
+if(r.ok){F2.hidden=true;$('doneD').textContent=dt+', '+slot+' IST';$('waD2').href='https://wa.me/'+S.wa;$('done2').hidden=false;return}
+$('msg2').value=txt;$('wa2').href='https://wa.me/'+S.wa+'?text='+encodeURIComponent(txt);
+$('ml2').href='mailto:'+S.email+'?subject='+encodeURIComponent('Call request: '+dt+', '+slot)+'&body='+encodeURIComponent(txt);
+F2.hidden=true;$('out2').hidden=false};
+$('again2').onclick=()=>{F2.reset();F2.dataset.tried='';F2.querySelectorAll('select').forEach(s=>s.dispatchEvent(new Event('change')));document.querySelectorAll('#f2 .err').forEach(x=>x.textContent='');slot='';document.querySelectorAll('#slots .chip').forEach(b=>b.classList.remove('on'));$('done2').hidden=true;F2.hidden=false};
+$('bk2').onclick=()=>{$('out2').hidden=true;F2.hidden=false};
+$('cp2').onclick=()=>{(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>$('cp2').textContent='Copied').catch(()=>{$('msg2').select();$('cp2').textContent='Select and copy'})};
+})();
+/*SCHEDEND*/
+function boot(){buildChips();$('n').textContent=P.length;render()}
+Promise.all([fetch('/api/projects').then(r=>r.ok?r.json():Promise.reject()),fetch('/api/config').then(r=>r.ok?r.json():Promise.reject())])
+.then(([pr,cf])=>{P.length=0;P.push(...pr);Object.assign(S,cf);applySite();$('em').textContent=S.email;$('em').href='mailto:'+S.email;$('em2').textContent=S.email;$('fem').textContent=S.email;$('fem').href='mailto:'+S.email;$('ph').textContent=S.phone;$('ph').href='tel:+'+S.wa;$('fph').textContent=S.phone;$('fph').href='tel:+'+S.wa}).catch(()=>{}).finally(boot);
+</script></body></html>
