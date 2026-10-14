@@ -65,6 +65,7 @@
 <div><h3>Mobile</h3><p>Kotlin, Jetpack Compose, Flutter, Firebase, Play Store publishing</p></div>
 <div><h3>Web</h3><p>React, Next.js, Node.js, FastAPI, REST and GraphQL APIs</p></div>
 <div><h3>Cloud &amp; data</h3><p>AWS, Docker, PostgreSQL, Redis, CI/CD, monitoring and alerting</p></div></div></div></section>
+<section id="reviews" hidden><div class="wrap"><h2>What clients say</h2><p class="sub">Feedback from teams we have built for.</p><div class="tgrid" id="tgrid"></div></div></section>
 <section id="faq" class="alt"><div class="wrap narrow"><h2>Frequently asked questions</h2><p class="sub">Short answers to what clients ask us first.</p>
 <details open><summary>What kind of projects do you take on?</summary><p>AI applications (chatbots, document search, voice agents, computer vision), Android apps, web apps and business websites, plus ongoing maintenance of existing software.</p></details>
 <details><summary>Can you maintain software someone else built?</summary><p>Yes. We review the code first, fix urgent issues, then agree a maintenance plan covering bug fixes, upgrades, security patches and monitoring.</p></details>
@@ -127,6 +128,7 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 const CC={"AI Applications":["c-ai","#1a73e8","ai"],"Android Apps":["c-an","#188038","an"],"Web Apps":["c-web","#d93025","web"],"Maintenance & Support":["c-mt","#b06000","mt"]};
 const cc=p=>CC[p.cat]||["c-ai","#1a73e8","ai"];
 const ico=p=>`<div class="ic ${cc(p)[0]}"><svg><use href="#i-${cc(p)[2]}"/></svg></div>`;
+(function(){const T=window.TESTIMONIALS||[];if(!T.length)return;$('tgrid').innerHTML=T.map(t=>`<figure class="tcard"><blockquote>${esc(t.quote)}</blockquote><figcaption><b>${esc(t.name)}</b>${t.role?'<span>'+esc(t.role)+'</span>':''}</figcaption></figure>`).join('');$('reviews').hidden=false})();
 function applySite(){$('tag').textContent=S.tagline;$('em').textContent=S.email;$('em').href='mailto:'+S.email;$('em2').textContent=S.email;$('fem').textContent=S.email;$('fem').href='mailto:'+S.email;
 $('ph').textContent=S.phone;$('ph').href='tel:+'+S.wa;$('fph').textContent=S.phone;$('fph').href='tel:+'+S.wa;
 $('gh').href=S.links.github||'#';$('li').href=S.links.linkedin||'#'}applySite();

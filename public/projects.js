@@ -32,3 +32,9 @@ window.PROJECTS = [
   { name:"Realtime Vision Pipeline", cat:"AI Applications", year:"2025", sample:false, desc:"Low-latency object detection streaming from edge cameras.", tags:["YOLO","gRPC"] },
   { name:"LLM Eval Harness", cat:"Maintenance & Support", year:"2026", sample:false, desc:"Automated regression and quality evals for prompts and agents.", tags:["Evals","CI"] }
 ];
+
+// Client testimonials. Add only real quotes that the client has agreed to share.
+// The section stays hidden until at least one is added. Example:
+// { quote:"DeepTech delivered on time and the app works well.", name:"Full Name", role:"Title, Company" }
+window.TESTIMONIALS = [
+];
