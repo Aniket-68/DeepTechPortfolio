@@ -53,7 +53,7 @@ section{padding:80px 0}h2{font-size:32px;font-weight:400;letter-spacing:-.3px;ma
 form{display:grid;gap:14px}label{font-size:13px;color:var(--mu);display:grid;gap:6px}
 input,select,textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--tx);font:inherit}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:-1px;border-color:var(--blue)}
-.list{display:grid;gap:14px;margin-top:8px}.list div{display:flex;gap:12px;align-items:center}.list .ic{width:40px;height:40px;margin:0;border-radius:50%}.list .ic svg{width:20px;height:20px}
+.list{display:grid;gap:14px;margin-top:8px}.list>div{display:flex;gap:12px;align-items:center}.list>div>div:not(.ic){display:block}.list .ic{width:40px;height:40px;margin:0;border-radius:50%}.list .ic svg{width:20px;height:20px}
 footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mu);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}footer a:hover{color:var(--blue)}
 .modal{position:fixed;inset:0;background:#202124a0;display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.modal.on{display:flex}
 .box{background:#fff;border-radius:20px;max-width:520px;width:100%;overflow:hidden;box-shadow:0 12px 32px #0005}
