@@ -27,12 +27,13 @@ if (fs.existsSync(ENV_FILE)) {
 const PORT = Number(process.env.PORT) || 3000;
 const PUB = path.join(__dirname, 'public');
 const ADMIN_DIR = path.join(__dirname, 'admin');
-const DATA = path.join(__dirname, 'data');
-const SHOTS = path.join(PUB, 'screenshots');
+// On Vercel the project folder is read-only; only /tmp is writable (and it is temporary).
+const ON_VERCEL = !!process.env.VERCEL;
+const DATA = ON_VERCEL ? '/tmp/deeptech-data' : path.join(__dirname, 'data');
+const SHOTS = ON_VERCEL ? '/tmp/deeptech-uploads' : path.join(PUB, 'screenshots');
 const DB_FILE = path.join(DATA, 'db.json');
 const AUTH_FILE = path.join(DATA, 'admin.json');
-fs.mkdirSync(DATA, { recursive: true });
-fs.mkdirSync(SHOTS, { recursive: true });
+for (const d of [DATA, SHOTS]) { try { fs.mkdirSync(d, { recursive: true }); } catch (e) { console.warn('Cannot create', d, e.message); } }
 
 const uid = () => crypto.randomBytes(6).toString('hex');
 const clean = (s, max) => String(s == null ? '' : s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, '').trim().slice(0, max);
@@ -305,10 +306,14 @@ A.post('/password', requireAdmin, (req, res) => {
 app.use('/admin/api', A);
 
 app.use('/admin', express.static(ADMIN_DIR));
+if (ON_VERCEL) app.use('/screenshots', express.static(SHOTS));
 app.use(express.static(PUB, { extensions: ['html'] }));
 app.use((req, res) => res.status(404).send('Not found'));
 app.use((err, req, res, next) => { console.error(err); res.status(500).json({ error: 'Server error.' }); });
 
-app.listen(PORT, () => {
-  console.log(`\n  DeepTech site:   http://localhost:${PORT}\n  Admin panel:     http://localhost:${PORT}/admin\n`);
-});
+if (!ON_VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`\n  DeepTech site:   http://localhost:${PORT}\n  Admin panel:     http://localhost:${PORT}/admin\n`);
+  });
+}
+module.exports = app;
